@@ -13,6 +13,7 @@ export default class OpptySummary extends LightningElement {
     get productRTId() { 
         if (this.objectInfo.data) {
             // Return  a map of record type Ids
+            
             const rtis = this.objectInfo.data.recordTypeInfos; 
             return Object.keys(rtis).find(rti => rtis[rti].name === 'Product'); 
         } 
